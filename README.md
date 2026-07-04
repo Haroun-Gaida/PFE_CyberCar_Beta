@@ -1,7 +1,7 @@
 # CyberCar Beta 🚗💨
 
 <div align="center">
-  <img src="ESP32-CyberCar_Beta/resources/CyberCar_logo.png" alt="CyberCar Logo" width="400"/>
+  <img src="ESP32-CyberCar_Beta/resources/full_architecture.png" alt="CyberCar Logo" width="400"/>
   <p><em>An Integrated Wireless Security Research Firmware and Mobile Controller Ecosystem</em></p>
 </div>
 
