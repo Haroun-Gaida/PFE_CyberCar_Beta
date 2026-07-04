@@ -156,7 +156,7 @@ Credentials can be changed from the Settings tab and are persisted to NVS flash 
 
 | Role | Name |
 |---|---|
-| Lead Developer | Sameer Al Sahab |
+| Lead Developer | Haroun Gaida |
 | Original Codebase | [risinek](https://github.com/risinek/esp32-wifi-penetration-tool) |
 | Inspiration | [spacehuhn](https://github.com/SpacehuhnTech/esp8266_deauther) |
 | BLE Spam Code | [justcallmekoko and ckcr4lyf](https://github.com/ckcr4lyf/EvilAppleJuice-ESP32)

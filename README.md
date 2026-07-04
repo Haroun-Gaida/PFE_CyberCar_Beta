@@ -179,7 +179,7 @@ The **CyberCar Beta App** is a Flutter-based mobile companion that controls the 
 
 ## 🤝 Credits
 
-*   **Lead Developer:** Sameer Al Sahab
+*   **Lead Developer:** Haroun Gaida
 *   **Original Codebase Foundation:** [risinek (ESP32 Wi-Fi Penetration Tool)](https://github.com/risinek/esp32-wifi-penetration-tool)
 *   **Deauther Inspiration:** [spacehuhn (ESP8266 Deauther)](https://github.com/SpacehuhnTech/esp8266_deauther)
 *   **BLE Advertising Code:** [justcallmekoko & ckcr4lyf (EvilAppleJuice-ESP32)](https://github.com/ckcr4lyf/EvilAppleJuice-ESP32)
