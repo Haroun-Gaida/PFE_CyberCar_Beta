@@ -1,0 +1,21 @@
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository: C:/Users/harou/.platformio/packages/framework-espidf/components/openthread/openthread/../../../.git/modules/components/openthread/openthread
+CMake Error at C:/Users/harou/.platformio/packages/framework-espidf/tools/cmake/component.cmake:480 (add_library):
+  Cannot find source file:
+
+    C:/Users/harou/Desktop/ESP32-Deauther-devkit-v1/main/display/CyberCar_ssd1306_display.c
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx
+Call Stack (most recent call first):
+  main/CMakeLists.txt:1 (idf_component_register)
+
+
+CMake Error at C:/Users/harou/.platformio/packages/framework-espidf/tools/cmake/component.cmake:480 (add_library):
+  No SOURCES given to target: __idf_main
+Call Stack (most recent call first):
+  main/CMakeLists.txt:1 (idf_component_register)
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

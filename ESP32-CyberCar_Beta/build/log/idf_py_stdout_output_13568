@@ -1,0 +1,19 @@
+[1/10] cmd.exe /C "cd /D C:\Users\harou\Desktop\ESP32-Deauther-devkit-v1\build\esp-idf\webserver && C:\Users\harou\.espressif\python_env\idf5.3_py3.14_env\Scripts\python.exe C:/Users/harou/.platformio/packages/framework-espidf/components/spiffs/spiffsgen.py 0x70000 C:/Users/harou/Desktop/ESP32-Deauther-devkit-v1/data C:/Users/harou/Desktop/ESP32-Deauther-devkit-v1/build/storage.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len"
+[2/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\harou\Desktop\ESP32-Deauther-devkit-v1\build\bootloader\esp-idf\esptool_py && C:\Users\harou\.espressif\python_env\idf5.3_py3.14_env\Scripts\python.exe C:/Users/harou/.platformio/packages/framework-espidf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/harou/Desktop/ESP32-Deauther-devkit-v1/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[3/8] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/bt/bt_payload_attack.cpp.obj
+[4/8] Linking C static library esp-idf\main\libmain.a
+[5/8] Generating ld/sections.ld
+[6/8] Linking CXX executable projectCyberCar-32.elf
+[7/8] Generating binary image from built executable
+Warning: Deprecated: Option '--flash_mode' is deprecated. Use '--flash-mode' instead.
+Warning: Deprecated: Option '--flash_freq' is deprecated. Use '--flash-freq' instead.
+Warning: Deprecated: Option '--flash_size' is deprecated. Use '--flash-size' instead.
+esptool v5.3.0
+Creating ESP32 image...
+Merged 2 ELF sections.
+Successfully created ESP32 image.
+Generated C:/Users/harou/Desktop/ESP32-Deauther-devkit-v1/build/projectCyberCar-32.bin
+[8/8] cmd.exe /C "cd /D C:\Users\harou\Desktop\ESP32-Deauther-devkit-v1\build\esp-idf\esptool_py && C:\Users\harou\.espressif\python_env\idf5.3_py3.14_env\Scripts\python.exe C:/Users/harou/.platformio/packages/framework-espidf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/harou/Desktop/ESP32-Deauther-devkit-v1/build/partition_table/partition-table.bin C:/Users/harou/Desktop/ESP32-Deauther-devkit-v1/build/projectCyberCar-32.bin"
+projectCyberCar-32.bin binary size 0x11a150 bytes. Smallest app partition is 0x180000 bytes. 0x65eb0 bytes (27%) free.

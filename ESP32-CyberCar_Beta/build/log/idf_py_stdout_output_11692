@@ -1,0 +1,38 @@
+[1/5] cmd.exe /C "cd /D C:\Users\harou\Desktop\ESP32-Deauther-devkit-v1\build\esp-idf\esptool_py && C:\Users\harou\.espressif\python_env\idf5.3_py3.14_env\Scripts\python.exe C:/Users/harou/.platformio/packages/framework-espidf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/harou/Desktop/ESP32-Deauther-devkit-v1/build/partition_table/partition-table.bin C:/Users/harou/Desktop/ESP32-Deauther-devkit-v1/build/projectCyberCar-32.bin"
+projectCyberCar-32.bin binary size 0x120ac0 bytes. Smallest app partition is 0x180000 bytes. 0x5f540 bytes (25%) free.
+[2/5] cmd.exe /C "cd /D C:\Users\harou\Desktop\ESP32-Deauther-devkit-v1\build\esp-idf\webserver && C:\Users\harou\.espressif\python_env\idf5.3_py3.14_env\Scripts\python.exe C:/Users/harou/.platformio/packages/framework-espidf/components/spiffs/spiffsgen.py 0x70000 C:/Users/harou/Desktop/ESP32-Deauther-devkit-v1/data C:/Users/harou/Desktop/ESP32-Deauther-devkit-v1/build/storage.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len"
+FAILED: esp-idf/webserver/CMakeFiles/spiffs_storage_bin 
+cmd.exe /C "cd /D C:\Users\harou\Desktop\ESP32-Deauther-devkit-v1\build\esp-idf\webserver && C:\Users\harou\.espressif\python_env\idf5.3_py3.14_env\Scripts\python.exe C:/Users/harou/.platformio/packages/framework-espidf/components/spiffs/spiffsgen.py 0x70000 C:/Users/harou/Desktop/ESP32-Deauther-devkit-v1/data C:/Users/harou/Desktop/ESP32-Deauther-devkit-v1/build/storage.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len"
+Traceback (most recent call last):
+  File "C:\Users\harou\.platformio\packages\framework-espidf\components\spiffs\spiffsgen.py", line 431, in create_file
+    block.update_obj(contents_chunk)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\harou\.platformio\packages\framework-espidf\components\spiffs\spiffsgen.py", line 346, in update_obj
+    raise SpiffsFullError()
+SpiffsFullError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\harou\.platformio\packages\framework-espidf\components\spiffs\spiffsgen.py", line 435, in create_file
+    raise SpiffsFullError
+SpiffsFullError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\harou\.platformio\packages\framework-espidf\components\spiffs\spiffsgen.py", line 590, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\harou\.platformio\packages\framework-espidf\components\spiffs\spiffsgen.py", line 582, in main
+    spiffs.create_file('/' + os.path.relpath(full_path, args.base_dir).replace('\\', '/'), full_path)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\harou\.platformio\packages\framework-espidf\components\spiffs\spiffsgen.py", line 446, in create_file
+    block = self._create_block()
+  File "C:\Users\harou\.platformio\packages\framework-espidf\components\spiffs\spiffsgen.py", line 395, in _create_block
+    raise SpiffsFullError('the image size has been exceeded')
+SpiffsFullError: the image size has been exceeded
+[3/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\harou\Desktop\ESP32-Deauther-devkit-v1\build\bootloader\esp-idf\esptool_py && C:\Users\harou\.espressif\python_env\idf5.3_py3.14_env\Scripts\python.exe C:/Users/harou/.platformio/packages/framework-espidf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/harou/Desktop/ESP32-Deauther-devkit-v1/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+ninja: build stopped: subcommand failed.
